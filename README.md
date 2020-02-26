@@ -18,5 +18,11 @@ I collected the data of pet adoptions from two websites.
 
 ### Transform
 
-Doing data cleaning for both data by filtering column, and extracting necessary values from the column.
+Doing data cleaning for both data by filtering column and extracting necessary values from the column using pandas. Then, export to csv for back up.
+
+From csv, we convert it to dictionary in a form of JSON.
+
+### Load
+
+Create a new database in MongoDB ("pet_adoption_db") and load the API data and web scarping data to different collections.
 
