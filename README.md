@@ -1,10 +1,10 @@
-# ETL-Challenge-PetAdoption
+# ETL Challenge: Pet Adoption
 
 - Extract: original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
 - Transform: what data cleaning or transformation was required.
 - Load: the final database, tables/collections, and why this was chosen.
 
-## Data Sources
+### Data Sources
 
 I collected the data of pet adoptions from two websites.
 
@@ -18,7 +18,7 @@ I collected the data of pet adoptions from two websites.
 
 ### Transform
 
-Doing data cleaning for both data by joining all csv extracted from API call, filtering column, remove n/a values and unsufficient data, then extracting necessary values from the column using pandas. Lastly, export to csv for back up.
+Doing data cleaning for both data by joining all csv extracted from API call, filtering column, remove 'n/a' values and unsufficient data, then extracting necessary values from the column using pandas. Lastly, export to csv for back up.
 
 ### Load
 
@@ -26,6 +26,6 @@ From csv, we convert it to dictionary in a form of JSON to load them to MongoDB.
 Create a new database in MongoDB ("pet_adoption_db") and load the API data and web scarping data to different collections.
 
 Collections:
-petfinder.com API -> petfinder
-dog.rescueme.org Web Scraping -> pet_rescueme
+- petfinder.com API -> petfinder
+- dog.rescueme.org Web Scraping -> pet_rescueme
 
