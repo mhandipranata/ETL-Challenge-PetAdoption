@@ -6,7 +6,8 @@ I collected the data of pet adoptions from two websites.
 
 - API: https://www.petfinder.com/developers/
 - Web Scraping: http://dog.rescueme.org/California
-<br>
+<br><br>
+
 ### Extract
 
 1. petfinder.com API has limitation of 1,000 call/day. Each call can collect 100 records per page (1 page, 1 API call). I called the data day by day and got a total of 209900 lines, put into pandas dataframe and stored the data in csv as a back up.
@@ -17,11 +18,18 @@ I collected the data of pet adoptions from two websites.
 2. dog.rescueme.org has 25 pages of pet adoption. I tried using splinter to go to each pages, but it did not work properly, so ended up looping through each pages and scrape. Put the scraped data into pandas dataframe and stored the data in csv as a back up.
 
 ![rescueme_scrape](screenshots/rescueme_scrape.png)
-<br>
+<br><br>
 
 ### Transform
 
 Doing data cleaning for both data by joining all csv extracted from API call, filtering column, remove 'n/a' values and unsufficient data, then extracting necessary values from the column using pandas. Lastly, export to csv for back up.
+
+![data_cleaning_1](screenshots/data_cleaning_1.png)
+![data_cleaning_2](screenshots/data_cleaning_2.png)
+![data_cleaning_3](screenshots/data_cleaning_3.png)
+![data_cleaning_4](screenshots/data_cleaning_4.png)
+
+<br>
 
 ### Load
 
@@ -32,3 +40,5 @@ Collections:
 - petfinder.com API -> petfinder
 - dog.rescueme.org Web Scraping -> pet_rescueme
 
+![database_petfinder_data](screenshots/database_petfinder.png)
+![database_rescueme_data](screenshots/database_rescueme.png)
