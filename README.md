@@ -1,5 +1,11 @@
 # ETL Challenge: Pet Adoption
 
+### Overview
+
+Perform ETL (Extract, Transform, and Load) process on Pet Adoption data. Data will be extracted from 2 different data sources (API and Web Scraping). Then clean and filter data using pandas, and transform to dictionary to load the data to a database (MongoDB).
+
+<b>Tools: </b> pandas, requests, json, BeautifulSoup, mongoDB
+<br><br>
 ### Data Sources
 
 I collected the data of pet adoptions from two websites.
@@ -22,7 +28,7 @@ I collected the data of pet adoptions from two websites.
 
 ### Transform
 
-Doing data cleaning for both data by joining all csv extracted from API call, filtering column, remove 'n/a' values and unsufficient data, then extracting necessary values from the column using pandas. Lastly, export to csv for back up.
+Perform data cleaning for both data by joining all csv extracted from API call, filtering column, remove 'n/a' values and unsufficient data, then extracting necessary values from the column using pandas. Lastly, export to csv for back up.
 
 ![data_cleaning_1](screenshots/data_cleaning_1.png)
 ![data_cleaning_2](screenshots/data_cleaning_2.png)
